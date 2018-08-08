@@ -1,10 +1,16 @@
-# Angular6Project
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+Clone project into local and goto project location in command promt and run following command
+ 
+ npm install
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
+# Angular6Project
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+
 
 ## Code scaffolding
 
