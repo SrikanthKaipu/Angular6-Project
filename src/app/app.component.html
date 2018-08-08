@@ -1,0 +1,22 @@
+<div style='margin: 20px' class="container">
+
+    <form [formGroup]="editForm">
+        <div>
+            <div *ngIf='showField' class="col-sm-4 form-group">
+                <input type="text" class="form-control" formControlName="fullName" placeholder="Full Name* (As per Aadhar)" />
+                <span class='error' *ngIf="editForm.get('fullName').touched && editForm.get('fullName').hasError('required')">
+                    Name field can't be blank
+                </span>
+            </div>
+
+            <div class="form-group">
+                <button *ngIf='onEdit' id="btn-fbsignup" type="button" class="btn btn-primary" (click)='onClickEdit()'>Edit</button>
+                <button *ngIf='onSave' id="btn-fbsignup" type="button" class="btn btn-secondary" (click)='onClickSave(editForm)'>Save</button>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        {{showText}}
+    </div>
+</div>
